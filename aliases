@@ -9,68 +9,18 @@ alias pd="pushd"
 # Alias for popd
 alias p="popd && clear"
 
-# Alias for lambda directory
-alias lam="pushd ~/Documents/lambda && clear && ls"
-
-# Alias for notes directory
-alias note="pushd ~/Documents/notes && clear && ls"
-
-# Alias for pets directory
-alias pet="pushd ~/Documents/pets && clear && ls"
-
-# Alias for Android directory
-alias droid="pushd ~/AndroidStudioProjects && clear && ls"
-
-# Alias for Android directory
-alias itel="pushd ~/IdeaProjects && clear && ls"
-
-# Alias for experiments directory
-alias exp="pushd ~/Documents/experiments && clear && ls"
-
-# Alias for experiments directory
-alias pack="pushd ~/Documents/packages && clear && ls"
-
-# Alias for bin directory
-alias bin="pushd ~/bin && clear && ls"
-
-# Alias for blog directory
-alias blog="pushd ~/Documents/blog && clear && ls"
-
 # Alias for clearing terminal then listing
 alias x="clear && ls"
 
 # Alias for clearing terminal
 alias c="clear"
 
-# Alias for updating Manjaro
-alias update="sudo pacman -Syu"
+alias x="clear && ls"
 
-# Alias for opening directory in VS Code
-alias vs="code . && clear"
+alias xa="clear && ls -a"
 
 # Alias for reloading .zshrc in current terminal
 alias reload="source ~/.zshrc && clear"
-
-# Alias for shutting down computer
-alias off="poweroff"
-
-# Alias for postgresql
-alias pgdb="clear && sudo -u postgres psql"
-
-# Alias for bushido template
-alias bush="pushd ~/Documents/packages/create-react-app/packages/cra-template-bushido && code . && clear && exit"
-
-# Alias for bushido light template
-alias bushl="pushd ~/Documents/packages/create-react-app/packages/cra-template-bushido-lite && code . && clear && exit"
-
-# Alias for bushido plus template
-alias bushp="pushd ~/Documents/packages/create-react-app/packages/cra-template-bushido-plus && code . && clear && exit"
-
-# Alias for bushido-strap
-alias strap="pushd ~/Documents/packages/bushido-strap && code . && clear && exit"
-
-# Alias for python
-alias py="python"
 
 # Alias for opening .vimrc file
 alias nvimrc="nvim ~/.config/nvim"
@@ -80,122 +30,12 @@ alias zshrc="nvim ~/.zshrc"
 
 # Alias for opening .bashrc file
 alias tmuxconf="nvim ~/.tmux.conf"
-
-# Alias for opening .bashrc file
-alias nbin="pushd ~/local/nodejs/bin && clear && ls"
-
-# Alias for opening .bashrc file
-alias pbin="pushd ~/local/python/bin && clear && ls"
-
-# Alias for opening test folder
-# alias test="pushd ~/Documents/test && clear"
-
-# Alias for opening bushido-strap test folder
-# alias teststrap="pushd ~/Documents/test/bushido-strap-test && code . && clear"
-
-# Alias for remote ssh on raspberrypi
-alias mypi="ssh pi@192.168.88.91"
-
-# Alias for remote ssh on raspberrypi
-alias dock="sudo systemctl start docker && sudo systemctl enable docker && sudo docker run hello-world"
-
-# Alias for generating new schema and running seeds
-alias gen="sudo make prisma-generate && make local-prisma-reseed"
-
-# Alias for bringing up prismatopia server
-alias serverup="sudo make local-up"
-
-# Alias for AdaptivApps
-alias adap="pushd ~/Documents/lambda/AdaptivApps && code . && exit"
-
-# Alias for AdaptivUI
-alias advui="pushd ~/Documents/packages/adaptiv-ui && code . && exit"
-
+#
 # export LS_COLORS="di=1;36:ex=32:fi=33"
 alias ls="ls --color"
 
-# Alias for React Native folder
-alias native="pushd ~/Documents/native && ls"
-
 # Alias for Neovim
-alias v="nvim"
-
-# Alias for Tetris project
-alias tet="pushd ~/Documents/pets/tetris && clear && ls"
-
-# Alias for python notes folder
-alias pyth="pushd ~/Documents/python-notes && clear && ls"
-
-# Alias for Hyper config
-alias hyp="nvim ~/.hyper.js"
-
-# Alias for Design Hub X
-alias hub="pushd ~/Documents/lambda/designhub && clear && ls"
-
-alias ..="cd .. && clear && ls"
-alias ...="cd ../.. && clear && ls"
-alias ....="cd ../../.. && clear && ls"
-alias .....="cd ../../../.. && clear && ls"
-
-alias ,,="cd .. && clear"
-alias ,,,="cd ../.. && clear"
-alias ,,,,="cd ../../.. && clear"
-alias ,,,,,="cd ../../../.. && clear"
-
-alias tap="pushd ~/Documents/tap && clear && ls"
-alias tapb="code ~/Documents/tap/Back-End"
-alias tapf="code ~/Documents/tap/Front-End"
-
-alias mud="pushd ~/Documents/mud-game && clear && ls"
-alias psw="nvim ~/.pswrds"
-alias srir="code ~/Documents/sriracha-docs"
-alias sui="code ~/Documents/sriracha"
-alias me="code ~/Documents/pets/me"
-alias oni="~/Downloads/Onivim2-x86_64.AppImage"
-alias redis="cd src/ && redis-server"
-alias bme="pushd ~/Documents/pets/best-markdown-editor && clear && ls"
-alias boot="cat /boot/efi/EFI/Manjaro/grubx64.efi > /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi"
-alias btp="pushd ~/Documents/lambda/bridges && clear && ls"
-alias b2p="pushd ~/Documents/lambda/bridges && clear && ls && code front-end/ && code back-end/"
-alias eso="pushd ~/Documents/eso && clear && ls"
-alias redis-server="~/redis-stable/src/redis-server"
-alias run="python manage.py runserver"
-alias shell="pipenv shell"
-alias gohome="pushd $HOME/go/src/github.com/JimmyMcBride && clear && ls"
-alias go2git="pushd $HOME/go/src/github.com && clear && ls"
-alias goquik="pushd $HOME/go/src/github.com/quikserve && clear && ls"
-alias gosrc="pushd $HOME/go/src && clear && ls"
-alias gopkg="pushd $HOME/go/pkg && clear && ls"
-alias gobin="pushd $HOME/go/bin && clear && ls"
-alias ezoic="pushd $HOME/ezoicgit && clear && ls"
-alias pls=sudo
-alias las="ls -h --author --time-style=long-iso -dUl -- .* * | awk '{if(NR>2)print \$5, \$7, \$9}'"
-alias alarc="nvim ~/.config/alacritty/alacritty.yml"
-alias server="ssh ubuntu@192.168.88.77"
-alias tapec2="ssh ubuntu@18.205.109.72"
-alias psw="sudo nvim ~/.pswrds"
-alias hyperjs="nvim ~/.hyper.js"
-alias ali="nvim ~/.zshconf/aliases"
-alias xprt="nvim ~/.zshconf/exports"
-alias omzrc="nvim ~/.zshconf/ohmyzsh"
-alias elden="pushd ~/Documents/pets/elden-hub && clear && ls"
-alias udiscord="sudo pacman -U https://www.archlinux.org/packages/community/x86_64/discord/download/"
-alias master="git checkout master && git pull"
-alias main="git checkout main && git pull"
-alias goninja="pushd ~/go/src/github.com/FireNinjaProductions && clear && ls"
-alias develop="git checkout develop && git pull"
-alias quik="pushd ~/Documents/quikserve && clear && ls"
-alias carbon="cargo run -- --memory --demo --leader"
-alias fuck='sudo $(fc -ln -1)'
-alias fetch="clear && neofetch"
-alias ue5="~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor"
-alias xa="clear && ls -a"
-alias actions="nvim ~/.zshconf/actions"
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-alias eastarch="ssh root@45.33.83.151"
-alias retile="qtile cmd-obj -o cmd -f reload_config"
-alias qtilerc="nvim ~/.config/qtile/config.py"
-# Alias for pets directory
-alias web="pushd ~/WebstormProjects && clear && ls"
 alias vim="nvim"
+
+
+alias actions="nvim ~/.zshconf/actions"
