@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+gitinit () {
+  git init --initial-branch=trunk
+  git remote add origin "$1"
+  git add .
+  git commit -m "init commit"
+  git push origin -u trunk
+}
+
+gitit () {
+  git add .
+  git commit -m "$1"
+  git push
+}
+
+branch () {
+  git checkout -b "$1"
+  git push origin -u "$1"
+}
+
