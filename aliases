@@ -25,17 +25,18 @@ alias reload="source ~/.zshrc && clear"
 # Alias for opening .vimrc file
 alias nvimrc="nvim ~/.config/nvim"
 
-# Alias for opening .zshrc file
+# Alias for opening .zshrc files
 alias zshrc="nvim ~/.zshrc"
+alias ali="nvim ~/.config/zsh/aliases"
+alias xprt="nvim ~/.config/zsh/exports"
+alias actions="nvim ~/.config/zsh/actions"
+alias omz="nvim ~/.config/zsh/ohmyzsh"
 
 # Alias for opening .bashrc file
 alias tmuxconf="nvim ~/.tmux.conf"
-#
+
 # export LS_COLORS="di=1;36:ex=32:fi=33"
 alias ls="ls --color"
 
 # Alias for Neovim
 alias vim="nvim"
-
-
-alias actions="nvim ~/.zshconf/actions"
